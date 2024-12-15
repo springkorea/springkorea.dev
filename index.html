@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스프링 한국 사용자모임 - Comming Soon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            /* background: linear-gradient(135deg, #6db33f, #218838); */
+            background-color: #1C1F23;
+            color: white;
+            font-family: 'Noto Sans KR', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: fadeInDown 2s ease-out;
+        }
+        .coming-soon {
+            animation: fadeIn 2s ease-in-out infinite alternate;
+            font-weight: bold;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .social-icons img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 로고 이미지 -->
+                <img src="logo.png" alt="로고" class="logo">
+                <!-- Coming Soon 텍스트 -->
+                <h1 class="display-4 coming-soon">스프링 한국 사용자모임</h1>
+                <p class="lead">웹사이트를 구축하고 있습니다. 잠시만 기다려주세요!</p>
+                <!-- 소셜 아이콘 -->
+                <div class="social-icons mt-4 d-flex justify-content-center align-items-center">
+                    <!-- Spring 로고 -->
+                    <a href="https://spring.io" target="_blank">
+                        <i class="fa-solid fa-leaf"></i>
+                    </a>
+                    <!-- GitHub 아이콘 -->
+                    <a href="https://github.com/springkorea" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- 로딩 애니메이션 -->
+                <div class="mt-5">
+                    <i class="fas fa-spinner fa-spin fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
